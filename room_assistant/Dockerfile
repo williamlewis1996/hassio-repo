@@ -4,7 +4,7 @@ FROM $BUILD_FROM as build
 ARG BUILD_VERSION=latest
 
 RUN apk add --no-cache nodejs npm python make g++ linux-headers libusb-dev eudev-dev avahi-dev
-RUN npm install -g --unsafe-perm room-assistant@$BUILD_VERSION
+RUN npm install -g --unsafe-perm williamlewis1996/room-assistant
 
 FROM $BUILD_FROM
 
